@@ -1,0 +1,24 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+$primary-green: #7ed56f;
+$primary-green-light: #55c57a;
+$primary-green-dark: #28b485;
+$grey-dark: #777;
+$white: #fff;
+$dark: #000;
+
+//rgba color
+$rgba-green-light: rgba(126, 213, 111, 0.8);
+$rgba-green-dark: rgba(48, 180, 131, 0.8);
+
+// Grid variables
+$grid-width: 114rem; // represent 1140px
+$gutter-vertical: 8rem; // represent 80px vertical margin space between e-row
+$gutter-horizontal: 2rem; // represent 60px horizontal margin space between column

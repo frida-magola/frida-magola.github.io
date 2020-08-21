@@ -1,0 +1,48 @@
+.e-row {
+  //max-width: 1140px; //standards width
+  max-width: $grid-width;
+  background: #eee;
+  margin: 0 auto;
+
+  //select everything and apply the margin bottom except the last-child
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include e-clearfix;
+}
+
+// all class attribute start with e-col-
+[class^="e-col-"] {
+  float: left;
+  background: orangered;
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
+}
+// Columns
+.e-col-6 {
+  width: calc((100% - #{$gutter-horizontal}) / 2);
+}
+
+.e-col-4 {
+  width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+}
+.e-col-8 {
+  width: calc(
+    ((100% - (#{$gutter-horizontal} * 2)) / 3) * 2 + #{$gutter-horizontal}
+  );
+}
+.e-col-3 {
+  width: calc((100% - (#{$gutter-horizontal} * 3)) / 4);
+}
+.e-col-6 {
+  width: calc(
+    ((100% - (#{$gutter-horizontal} * 3)) / 4) * 2 + #{$gutter-horizontal}
+  );
+}
+.e-col-9 {
+  width: calc(
+    ((100% - (#{$gutter-horizontal} * 3)) / 4) * 3 + 2 * #{$gutter-horizontal}
+  );
+}

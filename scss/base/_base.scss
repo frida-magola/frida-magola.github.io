@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 1rem = 10px 10/16 in % this define what 1rem is*/
+  font-size: 62.5%;
+  /* 100% <=> 16px par default */
+  /* font-size: 100%; */
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
