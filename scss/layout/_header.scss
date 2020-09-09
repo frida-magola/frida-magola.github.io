@@ -7,14 +7,29 @@
       rgba($primary-green-light, 0.8),
       rgba($primary-green-dark, 0.8)
     ),
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
   /* clip-path: polygon(x y, x y, x y); */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* clip-path: polygon(50% 0, 100% 100%, 0 100%); Triangle */
-
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+  /*Responsive image in css*/
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($grey-light-1, 0.8),
+        rgba($grey-light-3, 0.8)
+      ),
+      url(../img/hero.jpg);
+  }
   &--brand {
     position: absolute;
     left: 4rem;
@@ -23,7 +38,6 @@
       height: 3.5rem;
     }
   }
-
   &--text-box {
     position: absolute;
     left: 50%;

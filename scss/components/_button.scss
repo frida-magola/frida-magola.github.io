@@ -1,6 +1,26 @@
 /* BUTTONS */
 
 .e-btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all 0.2s;
+    border-radius: 10rem;
+    box-shadow: 0 1rem 2rem rgba($dark, 0.2);
+    position: relative;
+    font-size: $default-font-size;
+    /* change for <button> element*/
+    border: none;
+    cursor: pointer;
+  }
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
   &::after {
     content: "";
     width: 100%;
@@ -13,32 +33,19 @@
     z-index: -1;
     transition: all 0.4s;
   }
-  &:link,
-  &:visited {
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    transition: all 0.2s;
-    border-radius: 10rem;
-    box-shadow: 0 1rem 2rem rgba($dark, 0.2);
-    position: relative;
-    font-size: 1.6rem;
-  }
-  &:active {
-    transform: translateY(-1rem);
-    box-shadow: 0 0.5rem 1rem rgba($dark, 0.2);
-  }
-  &--animated {
-    animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards;
-  }
   &:hover {
-    transform: translateY(-1rem);
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($dark, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
-  &:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($dark, 0.2);
   }
   &--white {
     background-color: $white;
@@ -47,6 +54,33 @@
       background-color: $white;
     }
   }
+  &--green {
+    background-color: $primary-green-light;
+    color: $white;
+    &::after {
+      background-color: $primary-green-light;
+    }
+  }
 }
 
-/* END BUTTONS */
+.e-btn-text {
+  &:visited,
+  &:link {
+    color: $primary-green;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-green;
+    font-size: $default-font-size;
+    transition: all .2s;
+  }
+  &:hover {
+    color: $white;
+    background-color: $primary-green;
+    box-shadow: 0 1rem 2rem rgba($dark, .15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 1rem 2rem rgba($dark, .15);
+    transform: translateY(0px);
+  }
+}

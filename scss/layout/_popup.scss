@@ -1,0 +1,88 @@
+.e-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3000;
+    height: 100vh;
+    display: block;
+    background-color: rgba($dark, .8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    @supports((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($dark, 0.3);
+    }
+    &__content {
+        @include abs-center; // padding: 6rem 5rem;
+        background-color: $white;
+        border-radius: 3px;
+        box-shadow: 0 2rem 4rem rgba($dark, .2);
+        display: table;
+        width: 80%;
+        overflow: hidden;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .4s .2s;
+    }
+    &__left {
+        width: 33.333333%;
+        display: table-cell;
+    }
+    &__right {
+        width: 66.6666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid $grey-light-2;
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px solid $grey-light-2;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 4rem;
+        -webkit-column-rule: 1px solid $grey-light-2;
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px solid $grey-light-2;
+        hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+    }
+    /*Open state*/
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    /*Open state*/
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    &__close {
+        &:link,
+        &:visited {
+            font-size: 3rem;
+            color: $grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 1;
+        }
+        &:hover {
+            color: $primary-green;
+        }
+    }
+}

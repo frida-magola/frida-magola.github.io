@@ -1,24 +1,47 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
-
+//  Blue colors
+$blue-dark: #1976d2; //edc primary color dark1
+$blue-light-1: #2998ff; //edc primary color2
+$blue-light-2: #30c7fe; //edc primary color3
+$blue-light-3: #6ee2f1; //edc primary color
+// Green colors
 $primary-green: #7ed56f;
 $primary-green-light: #55c57a;
 $primary-green-dark: #28b485;
-$grey-dark: #777;
-$white: #fff;
-$dark: #000;
-
-//rgba color
+// Green colors RGBA
 $rgba-green-light: rgba(126, 213, 111, 0.8);
 $rgba-green-dark: rgba(48, 180, 131, 0.8);
-
+// White colors
+$white: #ffffff;
+$white-1: #fbfcfd;
+// Grey colors
+$grey-light-1: #f7f7f7;
+$grey-light-2: #f8f8f8;
+$grey-light-3: #eeeeee;
+$grey-dark: #777777;
+$grey-dark-1:#999999;
+$grey-dark-2:#333333;
+// Black colors
+$dark: #000000;
+// Orange colors
+$orange-light: #ffb900;
+$orange-dark: #ff7730;
+// Purple colors
+$purple-light: #5643fa;
 // Grid variables
 $grid-width: 114rem; // represent 1140px
 $gutter-vertical: 8rem; // represent 80px vertical margin space between e-row
-$gutter-horizontal: 2rem; // represent 60px horizontal margin space between column
+$gutter-horizontal: 3rem; // represent 60px horizontal margin space between column
+// Default font-size
+$default-font-size: 1.6rem;
+// Grid variables
+$max-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 3rem;
+// Box shadow
+$box-shadow: 0 1.5 4rem rgba($dark, 0.15);
+$box-shadow-1: 0 1rem 4rem rgba($dark, 0.8);
+// Default font-weight
+$default-font-weight: 400;
+// Default line-height
+$default-line-height: 1.7;

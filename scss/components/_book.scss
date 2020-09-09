@@ -1,0 +1,24 @@
+.e-book {
+    background: linear-gradient(105deg, rgba($white, .9) 0%, rgba($white, .9) 50%, transparent 50%), url(../../public/img/nat-10.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($dark, .2);
+    position: relative;
+    @include respond(tab-land) {
+        background-size: cover;
+        background: linear-gradient(105deg, rgba($white, .9) 0%, rgba($white, .9) 65%, transparent 65%), url(../../public/img/nat-10.jpg);
+    }
+    @include respond(tab-port) {
+        background: linear-gradient(to right, rgba($white, .9) 0%, rgba($white, .9) 100%), url(../../public/img/nat-10.jpg);
+    }
+    &__form {
+        width: 50%;
+        padding: 6rem;
+        @include respond(tab-land) {
+            width: 65%
+        }
+        @include respond(tab-port) {
+            width: 100%
+        }
+    }
+}

@@ -9,13 +9,42 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link rel="stylesheet" href="/public/css/easeindoingcode.css" />
+    <link rel="stylesheet" href="/public/css/easeindoingcode.min.css" />
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png" />
 
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <!-- navigation -->
+    <div class="e-navigation">
+      <input type="checkbox" class="e-navigation__checkbox" id="e-nav-toggle" />
+      <label for="e-nav-toggle" class="e-navigation__button"
+        ><span class="e-navigation__icon">&nbsp;</span></label
+      >
+      <div class="e-navigation__bg">&nbsp;</div>
+      <nav class="e-navigation__nav">
+        <ul class="e-navigation__list">
+          <li class="e-navigation__item">
+            <a href="#" class="e-navigation__link">About Natours</a>
+          </li>
+          <li class="e-navigation__item">
+            <a href="#" class="e-navigation__link">About Natour</a>
+          </li>
+          <li class="e-navigation__item">
+            <a href="#" class="e-navigation__link">Your Bonfit</a>
+          </li>
+          <li class="e-navigation__item">
+            <a href="#" class="e-navigation__link">Popular Tours</a>
+          </li>
+          <li class="e-navigation__item">
+            <a href="#" class="e-navigation__link">Stories </a>
+          </li>
+          <li class="e-navigation__item">
+            <a href="#" class="e-navigation__link">Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <!-- HEADER -->
     <header class="e-header">
       <div class="e-header--brand">
@@ -32,51 +61,460 @@
           <span class="e-heading__primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#" class="e-btn e-btn--white e-btn--animated"
+        <a href="#e-section__tours" class="e-btn e-btn--white e-btn--animated"
           >Discover Our Tours</a
         >
       </div>
     </header>
     <!-- End header -->
 
+    <!-- main content -->
+    <main>
+      <section class="e-section__about">
+        <div class="e-center-text">
+          <h2 class="e-heading__secondary e-mb-lg">
+            Exciting tours for adventures people
+          </h2>
+        </div>
+
+        <div class="e-row">
+          <div class="e-col-6">
+            <h3 class="e-heading__tertiary e-mb-xsm">
+              You're going to fall in love with nature
+            </h3>
+            <p class="e-paragraph">
+              Discover Our Tours, Exciting tours for adventurous people Exciting
+              tours for adventurous people Discover Our Tours, Exciting tours
+              for adventurous people Exciting tours for adventurous people
+              Discover Our Tours, Exciting tours for adventurous people Exciting
+              tours for adventurous people
+            </p>
+
+            <h3 class="e-heading__tertiary e-mb-xsm">
+              Live adventures like you never have before
+            </h3>
+            <p class="e-paragraph">
+              Discover Our Tours, Exciting tours for adventurous people Exciting
+              tours for adventurous people Discover Our Tours, Exciting tours
+              for adventurous people Exciting tours for adventurous people
+              Discover Our Tours, Exciting tours for adventurous people Exciting
+              tours for adventurous people
+            </p>
+
+            <a href="#" class="e-btn-text">Learn More &rarr;</a>
+          </div>
+          <div class="e-col-6">
+            <div class="e-composition">
+              <!-- responsive images using density -->
+              <img
+                srcset="/public/img/nat-1.jpg 300vw,/public/img/nat-1-large.jpg 1000vw"
+                sizes="(max-with:56.25em) 20vw, (max-width:37.5em) 30vw , 300px"
+                alt="photo 1"
+                class="e-composition__photo e-composition__photo--p1"
+                src="/public/img/nat-1-large.jpg"
+              />
+
+              <img
+                srcset="/public/img/nat-2.jpg 300vw, /public/img/nat-2-large.jpg 1000vw"
+                sizes="(max-with:56.25em) 20vw, (max-width:37.5em) 30vw , 300px"
+                src="/public/img/nat-2-large.jpg"
+                alt="nat-2"
+                class="e-composition__photo e-composition__photo--p2"
+              />
+              <img
+                srcset="/public/img/nat-3.jpg 300vw, /public/img/nat-3-large.jpg 1000vw"
+                sizes="(max-with:56.25em) 20vw, (max-width:37.5em) 30vw , 300px"
+                src="/public/img/nat-3-large.jpg"
+                alt="nat-3"
+                class="e-composition__photo e-composition__photo--p3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="e-section__features">
+        <div class="e-row">
+          <div class="e-col-3">
+            <div class="e-feature-box">
+              <i class="e-feature-box__icon icon-basic-world"></i>
+              <h3 class="e-heading__tertiary e-mb-sm">Explore the world</h3>
+              <p class="e-feature-box__text">
+                Discover Our Tours, Exciting tours for adventurous people
+                Exciting tours for adventurous people Discover Our Tours,
+                Exciting tours for adventurous people Exciting tours for
+                adventurous people Discover Our Tours
+              </p>
+            </div>
+          </div>
+          <div class="e-col-3">
+            <div class="e-feature-box">
+              <i class="e-feature-box__icon icon-basic-compass"></i>
+              <h3 class="e-heading__tertiary e-mb-sm">Meet Nature</h3>
+              <p class="e-feature-box__text">
+                Discover Our Tours, Exciting tours for adventurous people
+                Exciting tours for adventurous people Discover Our Tours,
+                Exciting tours for adventurous people Exciting tours for
+                adventurous people Discover Our Tours
+              </p>
+            </div>
+          </div>
+          <div class="e-col-3">
+            <div class="e-feature-box">
+              <i class="e-feature-box__icon icon-basic-map"></i>
+              <h3 class="e-heading__tertiary e-mb-sm">Find Your Way</h3>
+              <p class="e-feature-box__text">
+                Discover Our Tours, Exciting tours for adventurous people
+                Exciting tours for adventurous people Discover Our Tours,
+                Exciting tours for adventurous people Exciting tours for
+                adventurous people Discover Our Tours
+              </p>
+            </div>
+          </div>
+          <div class="e-col-3">
+            <div class="e-feature-box">
+              <i class="e-feature-box__icon icon-basic-heart"></i>
+              <h3 class="e-heading__tertiary e-mb-sm">Live a healthier life</h3>
+              <p class="e-feature-box__text">
+                Discover Our Tours, Exciting tours for adventurous people
+                Exciting tours for adventurous people Discover Our Tours,
+                Exciting tours for adventurous people Exciting tours for
+                adventurous people Discover Our Tours
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="e-section__tours" id="e-section__tours">
+        <div class="e-center-text">
+          <h2 class="e-heading__secondary e-mb-lg">Most popular tours</h2>
+        </div>
+
+        <div class="e-row">
+          <div class="e-col-4">
+            <div class="e-card">
+              <div class="e-card__side e-card__side--front">
+                <div class="e-card__picture e-card__picture--1">&nbsp;</div>
+                <h4 class="e-card__heading">
+                  <span class="e-card__heading-span e-card__heading-span--1"
+                    >The Sea Explore</span
+                  >
+                </h4>
+                <div class="e-card__details">
+                  <ul>
+                    <li>3 any tours</li>
+                    <li>Up to 30 people</li>
+                    <li>2 tour guide</li>
+                    <li>Sleep in cozy hotels</li>
+                    <li>Difficulty : Easy</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="e-card__side e-card__side--back e-card__side--back-1">
+                <div class="e-card__details-back-side">
+                  <div class="e-card__price-box">
+                    <p class="e-card__price-box--only">Only</p>
+                    <p class="e-card__price-box--value">R2500.00</p>
+                  </div>
+                  <a href="#e-popup" class="e-btn e-btn--white">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="e-col-4">
+            <div class="e-card">
+              <div class="e-card__side e-card__side--front">
+                <div class="e-card__picture e-card__picture--2">&nbsp;</div>
+                <h4 class="e-card__heading">
+                  <span class="e-card__heading-span e-card__heading-span--2"
+                    >The Forest Hiker</span
+                  >
+                </h4>
+                <div class="e-card__details">
+                  <ul>
+                    <li>7 any tours</li>
+                    <li>Up to 40 people</li>
+                    <li>6 tour guide</li>
+                    <li>Sleep in provided tents</li>
+                    <li>Difficulty : Medium</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="e-card__side e-card__side--back e-card__side--back-2">
+                <div class="e-card__details-back-side">
+                  <div class="e-card__price-box">
+                    <p class="e-card__price-box--only">Only</p>
+                    <p class="e-card__price-box--value">R5500.00</p>
+                  </div>
+                  <a href="#e-popup" class="e-btn e-btn--white">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="e-col-4">
+            <div class="e-card">
+              <div class="e-card__side e-card__side--front">
+                <div class="e-card__picture e-card__picture--3">&nbsp;</div>
+                <h4 class="e-card__heading">
+                  <span class="e-card__heading-span e-card__heading-span--3"
+                    >The Snow Adventurer</span
+                  >
+                </h4>
+                <div class="e-card__details">
+                  <ul>
+                    <li>5 any tours</li>
+                    <li>Up to 15 people</li>
+                    <li>3 tour guide</li>
+                    <li>Sleep in provided tents</li>
+                    <li>Difficulty : Hard</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="e-card__side e-card__side--back e-card__side--back-3">
+                <div class="e-card__details-back-side">
+                  <div class="e-card__price-box">
+                    <p class="e-card__price-box--only">Only</p>
+                    <p class="e-card__price-box--value">R8500.00</p>
+                  </div>
+                  <a href="#e-popup" class="e-btn e-btn--white">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="e-center-text e-mt-xlg">
+          <a href="#e-popup" class="e-btn e-btn--green">Discover all tours</a>
+        </div>
+      </section>
+
+      <section class="e-section__stories">
+        <div class="e-bg-video">
+          <video class="e-bg-video__content autoplay muted loop">
+            <source src="/public/img/video.mp4" type="video/mp4" />
+            <source src="/public/img/video.webm" type="video/webm" />
+            Your browser is not supported.
+          </video>
+        </div>
+        <div class="e-center-text">
+          <h2 class="e-heading__secondary e-mb-lg">
+            We make people genuinely happy
+          </h2>
+        </div>
+
+        <div class="e-row">
+          <div class="e-story">
+            <figure class="e-story__shape">
+              <img
+                src="/public/img/nat-8.jpg"
+                alt="photo 1"
+                class="e-story__img"
+              />
+              <figcaption class="e-story__caption">Mary Smith</figcaption>
+            </figure>
+            <div class="e-story__content">
+              <h3 class="e-heading__tertiary e-mb-xsm">
+                I have the best week ever with my family
+              </h3>
+              <p class="e-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                totam iusto repudiandae, voluptate quaerat, repellat accusantium
+                excepturi ipsum esse possimus, optio laudantium error
+                consectetur facilis aliquam. Sed mollitia ab asperiores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="e-row">
+          <div class="e-story">
+            <figure class="e-story__shape">
+              <img
+                src="/public/img/nat-9.jpg"
+                alt="photo 2"
+                class="e-story__img"
+              />
+              <figcaption class="e-story__caption">Jack Welson</figcaption>
+            </figure>
+            <div class="e-story__content">
+              <h3 class="e-heading__tertiary e-mb-xsm">
+                Wow! My life is completely different now
+              </h3>
+              <p class="e-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                totam iusto repudiandae, voluptate quaerat, repellat accusantium
+                excepturi ipsum esse possimus, optio laudantium error
+                consectetur facilis aliquam. Sed mollitia ab asperiores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="e-center-text e-mt-xlg">
+          <a href="#" class="e-btn-text">Read all stories &rarr;</a>
+        </div>
+      </section>
+
+      <section class="e-section__book">
+        <div class="e-row">
+          <div class="e-book">
+            <div class="e-book__form">
+              <form action="#" class="e-form">
+                <div class="">
+                  <h2 class="e-heading__secondary e-mb-md">
+                    Start Booking now
+                  </h2>
+                </div>
+                <div class="e-form__group">
+                  <input
+                    type="text"
+                    class="e-form__input"
+                    placeholder="Full name"
+                    required
+                    name="username"
+                    id="username"
+                  />
+                  <label for="username" class="e-form__label">Full Name</label>
+                </div>
+
+                <div class="e-form__group">
+                  <input
+                    type="email"
+                    class="e-form__input"
+                    placeholder="Email address"
+                    required
+                    name="email"
+                    id="email"
+                  />
+                  <label for="email" class="e-form__label">Email Address</label>
+                </div>
+
+                <div class="e-form__group e-mb-md">
+                  <div class="e-form__radio-group">
+                    <input
+                      type="radio"
+                      class="e-form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="e-form__radio-label"
+                      ><span class="e-form__radio-button"></span> Small tour
+                      group</label
+                    >
+                  </div>
+
+                  <div class="e-form__radio-group">
+                    <input
+                      type="radio"
+                      class="e-form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="e-form__radio-label"
+                      ><span class="e-form__radio-button"></span>Large tour
+                      group</label
+                    >
+                  </div>
+                </div>
+
+                <div class="e-form__group">
+                  <button class="e-btn e-btn--green">Next Step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="e-footer">
+      <div class="e-footer__logo-box">
+        <!-- responsive images design with 1x and 2x -->
+        <picture class="e-footer__logo">
+          <source
+            srcset="
+              /public/img/logo-green-small-1x.png 1x,
+              /public/img/logo-green-small-2x.png 2x
+            "
+            type=""
+            media="(max-width:37.5em)"
+          />
+          <img
+            srcset="
+              /public/img/logo-green-1x.png 1x,
+              /public/img/logo-green-2x.png 2x
+            "
+            alt="full logo"
+          />
+        </picture>
+      </div>
+      <div class="e-row">
+        <div class="e-col-6">
+          <div class="e-footer__navigation">
+            <ul class="e-footer__list">
+              <li class="e-footer__item">
+                <a href="#" class="e-footer__link">Company</a>
+              </li>
+
+              <li class="e-footer__item">
+                <a href="#" class="e-footer__link">Contact us</a>
+              </li>
+
+              <li class="e-footer__item">
+                <a href="#" class="e-footer__link">Carrers</a>
+              </li>
+
+              <li class="e-footer__item">
+                <a href="#" class="e-footer__link">Privacy policy</a>
+              </li>
+
+              <li class="e-footer__item">
+                <a href="#" class="e-footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="e-col-6">
+          <p class="e-footer__copyright">
+            Build by
+            <a href="#" class="e-footer__link">Nyira Mwalila D.</a> from online
+            course <a href="#" class="e-footer__link">Advanced CSS and SASS</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- pop up modal -->
+    <div class="e-popup" id="e-popup">
+      <div class="e-popup__content">
+        <div class="e-popup__left">
+          <img src="/public/img/nat-8.jpg" alt="photo 8" class="e-popup__img" />
+          <img src="/public/img/nat-9.jpg" alt="photo 9" class="e-popup__img" />
+        </div>
+        <div class="e-popup__right">
+          <a href="#e-section__tours" class="e-popup__close">&times;</a>
+          <h2 class="e-heading__secondary e-mb-sm">Start Booking Now</h2>
+          <h3 class="e-heading__tertiary e-mb-xsm">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="e-popup__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
+            vel doloremque consequuntur debitis fugit minima architecto corporis
+            aliquam facilis beatae quod iusto id veritatis delectus est amet
+            temporibus repellat ea?
+          </p>
+
+          <a href="#" class="e-btn e-btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
+
     <!-- grid test -->
-    <section class="e-grid">
-      <div class="e-row">
-        <div class="e-col-6">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-        <div class="e-col-6">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-      </div>
-
-      <div class="e-row">
-        <div class="e-col-4">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-        <div class="e-col-4">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-        <div class="e-col-4">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-      </div>
-
+    <!-- <section class="e-grid">
       <div class="e-row">
         <div class="e-col-4">
           <p>
@@ -92,32 +530,7 @@
         </div>
       </div>
 
-      <div class="e-row">
-        <div class="e-col-3">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-        <div class="e-col-3">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-        <div class="e-col-3">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-        <div class="e-col-3">
-          <p>
-            Discover Our Tours, Exciting tours for adventurous people Exciting
-            tours for adventurous people
-          </p>
-        </div>
-      </div>
+      
 
       <div class="e-row">
         <div class="e-col-3">
@@ -155,6 +568,6 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
   </body>
 </html>
